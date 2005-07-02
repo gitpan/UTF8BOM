@@ -1,0 +1,6 @@
+Revision history for Perl extension UTF8BOM.
+
+0.01  Sat Jul  2 18:25:20 2005
+	- original version; created by h2xs 1.23 with options
+		-X -A UTF8BOM
+
