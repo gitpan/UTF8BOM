@@ -5,7 +5,7 @@ use IO::File;
 use IO::Dir;
 use File::Spec;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 my $BOM = "\x{ef}\x{bb}\x{bf}";
 
@@ -69,8 +69,8 @@ sub remove_from_files {
             $class->remove_from_file($path);
         } elsif (-e $path && -d $path && $recursive) {
             $class->remove_from_files(
-                dir            => $path,
-                recursive    => 1,
+                dir       => $path,
+                recursive => 1,
             );
         }
     }
@@ -90,8 +90,8 @@ sub insert_into_files {
             $class->insert_into_file($path);
         } elsif (-e $path && -d $path && $recursive) {
             $class->insert_into_files(
-                dir            => $path,
-                recursive    => 1,
+                dir       => $path,
+                recursive => 1,
             );
         }
     }
@@ -119,12 +119,12 @@ UTF8BOM - handling Byte Order Mark for UTF-8 files
         dir       => '/path/to/dir',
     );
 
-	# or on your shell
-	utf8bom -insert -dir  /path/to/dir  -recursive
-	utf8bon -strip  -file /path/to/file
+    # or on your shell
+    utf8bom -insert -dir  /path/to/dir  -recursive
+    utf8bom -strip  -file /path/to/file
 
-	# display usage
-	utf8bon -help
+    # display usage
+    utf8bom -help
 
 =head1 DESCRIPTION
 
