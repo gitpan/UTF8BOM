@@ -37,7 +37,7 @@ if($dir){
     recursive    => $recursive,
     );
     }elsif($strip){
-    UTF8BOM->strip_from_files(
+    UTF8BOM->remove_from_files(
     dir            => $dir,
     recursive    => $recursive,
     );

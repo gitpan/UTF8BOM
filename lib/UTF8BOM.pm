@@ -5,7 +5,7 @@ use IO::File;
 use IO::Dir;
 use File::Spec;
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 my $BOM = "\x{ef}\x{bb}\x{bf}";
 

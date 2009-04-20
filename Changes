@@ -1,5 +1,9 @@
 Revision history for Perl extension UTF8BOM.
 
+1.02  Sun Oct  1 02:25:20 2005
+    - bin/utf8bom fixed wrong method calling. strip_from_files -> remove_from_files
+      Thanks to Marcus Bointon.
+
 1.01  Sun Oct  1 02:25:20 2005
     - little bit fixed documantation
 
